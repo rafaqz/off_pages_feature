@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Drupal needs this blank file.
+ */
+
+/**
+ * Implementation of hook_menu_alter().
+ */
+function off_pages_feature_menu_alter(&$items) {
+  // Override default home page content.
+  $items['node']['page callback'] = 'off_pages_feature_node_page_default';
+}
+ 
+/**
+ * Menu callback for default page.
+ */
+function off_pages_feature_node_page_default() {
+  drupal_set_title('');
+  return '';
+}
