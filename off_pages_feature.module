@@ -9,13 +9,20 @@
  */
 function off_pages_feature_menu_alter(&$items) {
   // Override default home page content.
-  $items['node']['page callback'] = 'off_pages_feature_node_page_default';
+  $items['node']['page callback'] = 'off_pages_feature_empty_page';
+  // Registration and login pages.
+  $items['contribute'] = array(
+    'title' => 'Contribute',
+    'page callback' => 'off_pages_feature_empty_page',
+    'weight' => 2,
+    'menu_name' => 'main-menu',
+  );
 }
  
 /**
  * Menu callback for default page.
  */
-function off_pages_feature_node_page_default() {
+function off_pages_feature_empty_page() {
   drupal_set_title('');
   return '';
 }
