@@ -1,7 +1,7 @@
 name = Off Pages Feature
 description = Provides custom pages for the open food foundation site.
 core = 7.x
-package = Collaco
+package = Collabco
 dependencies[] = fe_block
 features[fe_block_boxes][] = front_main
 features[features_api][] = api:2
