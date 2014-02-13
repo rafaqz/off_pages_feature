@@ -4,5 +4,6 @@ core = 7.x
 package = Collabco
 dependencies[] = fe_block
 features[fe_block_boxes][] = front_main
+features[fe_block_settings][] = block-front_main
 features[features_api][] = api:2
 project path = sites/all/modules/features
