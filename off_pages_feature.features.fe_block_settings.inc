@@ -19,7 +19,7 @@ function off_pages_feature_default_fe_block_settings() {
     'machine_name' => 'front_main',
     'module' => 'block',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'custom_zurb' => array(
@@ -36,7 +36,7 @@ function off_pages_feature_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   return $export;
