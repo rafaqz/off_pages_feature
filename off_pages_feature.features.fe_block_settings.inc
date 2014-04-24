@@ -12,21 +12,21 @@ function off_pages_feature_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
-  $export['block-front_main'] = array(
+  $export['menu_block-1'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'machine_name' => 'front_main',
-    'module' => 'block',
+    'delta' => 1,
+    'module' => 'menu_block',
     'node_types' => array(),
-    'pages' => '<front>',
+    'pages' => '',
     'roles' => array(),
     'themes' => array(
       'custom_zurb' => array(
-        'region' => 'featured',
+        'region' => 'footer',
         'status' => 1,
         'theme' => 'custom_zurb',
-        'weight' => 0,
+        'weight' => -35,
       ),
       'seven' => array(
         'region' => '',
@@ -35,8 +35,8 @@ function off_pages_feature_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '',
-    'visibility' => 1,
+    'title' => '<none>',
+    'visibility' => 0,
   );
 
   return $export;
