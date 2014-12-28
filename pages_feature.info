@@ -1,7 +1,7 @@
-name = Off Pages Feature
+name = Pages Feature
 description = Provides custom pages for the open food foundation site.
 core = 7.x
-package = Collabco
+package = Features
 dependencies[] = ctools
 dependencies[] = fe_block
 dependencies[] = menu_block
