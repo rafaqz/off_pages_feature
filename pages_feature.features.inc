@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * off_pages_feature.features.inc
+ * pages_feature.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function off_pages_feature_ctools_plugin_api($module = NULL, $api = NULL) {
+function pages_feature_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }

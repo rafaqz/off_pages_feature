@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * off_pages_feature.features.fe_block_boxes.inc
+ * pages_feature.features.fe_block_boxes.inc
  */
 
 /**
  * Implements hook_default_fe_block_boxes().
  */
-function off_pages_feature_default_fe_block_boxes() {
+function pages_feature_default_fe_block_boxes() {
   $export = array();
 
   $fe_block_boxes = new stdClass();
