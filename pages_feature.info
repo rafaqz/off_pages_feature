@@ -20,4 +20,3 @@ features[variable][] = menu_block_1_title_link
 features[variable][] = menu_block_ids
 features[variable][] = menu_block_menu_order
 features[variable][] = menu_block_suppress_core
-project path = profiles/collabco/modules/features
