@@ -8,21 +8,11 @@
  * Implementation of hook_menu_alter().
  */
 function pages_feature_menu_alter(&$items) {
-  // Override default home page content.
-  $items['node']['page callback'] = 'pages_feature_empty_page';
   // Registration and login pages.
   $items['contribute'] = array(
     'title' => 'Contribute',
-    'page callback' => 'pages_feature_empty_page',
+    'page callback' => 'core_feature_empty_page',
     'weight' => 2,
     'menu_name' => 'main-menu',
   );
-}
- 
-/**
- * Menu callback for default page.
- */
-function pages_feature_empty_page() {
-  drupal_set_title('');
-  return '';
 }
